@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
 
 export default function Searchbar({ onSubmit }) {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const search = searchParams.get('searchWord');
 
   const [searchQuery, setSearchQuery] = useState(search || '');
