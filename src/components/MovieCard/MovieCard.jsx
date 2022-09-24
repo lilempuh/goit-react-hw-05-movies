@@ -2,7 +2,7 @@ import propTypes from 'prop-types';
 import {
   DivWrapper,
   ImageWrapper,
-  MovieHeader,
+  MovHeader,
   Details,
   GenresWrapper,
   Genres,
@@ -18,7 +18,7 @@ export default function MovieCard({ movie }) {
         />
       </ImageWrapper>
       <div>
-        <MovieHeader>{movie.title ? movie.title : 'Movie'}</MovieHeader>
+        <MovHeader>{movie.title ? movie.title : 'Movie'}</MovHeader>
         <Details>{`User score:   ${movie.vote_average} %`}</Details>
         <Details>{`Overview:  ${movie.overview}`}</Details>
         <GenresWrapper>

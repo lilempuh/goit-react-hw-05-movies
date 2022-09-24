@@ -10,7 +10,7 @@ export const ImageWrapper = styled.div`
   margin-right: 20px;
 `;
 
-export const MovieHeader = styled.h2`
+export const MovHeader = styled.h2`
   margin-bottom: 20px;
 `;
 

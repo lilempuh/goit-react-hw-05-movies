@@ -1,10 +1,12 @@
-import { Link } from './Navigator.styled';
+import { NavigLink } from './Navigator.styled';
 
 export default function Navigator() {
   return (
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/movies">Movies</Link>
+      <NavigLink exact to="/">
+        Home
+      </NavigLink>
+      <NavigLink to="/movies">Movies</NavigLink>
     </nav>
   );
 }

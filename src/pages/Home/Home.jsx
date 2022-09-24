@@ -36,14 +36,11 @@ export default function Home() {
 
   return (
     <main>
-      <div>
-        {/* {isLoading && <Loader />} */}
-        <ul>
-          {status === Status.PENDING && <Loader />}
-          {status === Status.REJECTED && <Error message={error} />}
-          {status === Status.RESOLVED && <MoviesList movies={movies} />}
-        </ul>
-      </div>
+      <ul>
+        {status === Status.PENDING && <Loader />}
+        {status === Status.REJECTED && <Error message={error} />}
+        {status === Status.RESOLVED && <MoviesList movies={movies} />}
+      </ul>
     </main>
   );
 }
